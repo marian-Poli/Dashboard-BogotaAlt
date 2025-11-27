@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard Bogota.Atl</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <header class="main-header">
+            <div class="brand">
+                <i class="fa-solid fa-chart-line"></i>
+                <h1>DashBoard <span>Bogota.Atl</span></h1> </div>
+            <p class="subtitle">Análisis de Rendimiento y Likes Ajustados</p>
+        </header>
+
+        <div id="loader" class="loader-container">
+            <div class="spinner"></div>
+            <p>Consultando Base de Datos en Tiempo Real...</p>
+        </div>
+
+        <main id="app" class="grid-container">
+            </main>
+    </div>
+
+    <div id="post-detail-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Detalle de Publicaciones</h2>
+                <span class="close-button" onclick="closeModal()">&times;</span>
+            </div>
+            <div id="modal-body" class="table-container-modal">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
